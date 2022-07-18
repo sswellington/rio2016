@@ -11,13 +11,12 @@ input, textarea
 	font-family:  sans-serif;
 	font-weight: normal;
 	font-size: 13pt;
-	background-color: rgba(255,255,255,.8);
+	background-color: rgb(214, 226, 237);
 }
 
 input:hover, textarea:hover
 {
-	background-color: #dddddd;
-
+	background-color: #bad0e4;
 }
 
 legend
@@ -41,20 +40,20 @@ fieldset#sexo
 
 fieldset#identidade
 {
-	background: url("../_image/icone-contato.png")no-repeat 90% ;
+	background: url("../image/icone-contato.png")no-repeat 90% ;
 }
 
 fieldset#endereco
 {
-	background: url("../_image/icone-endereco.png")no-repeat 98% ;
+	background: url("../image/icone-endereco.png")no-repeat 98% ;
 }
 
 fieldset#mensagem
 {
-	background: url("../_image/icone-mensagem.png")no-repeat 98% 95% ;
+	background: url("../image/icone-mensagem.png")no-repeat 98% 95% ;
 }
 
 fieldset#pedido
 {
-	background: url("../_image/icone-pagamento.png")no-repeat 105% 210% ;
+	background: url("../image/icone-pagamento.png")no-repeat 105% 210% ;
 }

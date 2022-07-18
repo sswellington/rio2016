@@ -3,36 +3,27 @@
 <head>
 	<meta charset=utf-8>
 	<title> Olimpíada - Rio 2016 </title>
-	<link rel="shortcut icon" type="image/x-icon" href="_imagens/favicon.ico">
-	<link rel="stylesheet" type="text/css" href="../_css/style.css">
-	<link rel="stylesheet" type="text/css" href="../_css/form.css">
-
-	<script>
-		function calc_total() {
-			var qtd = parseInt(document.getElementById('idQuantidade').value);
-			total = qtd * 250;
-			document.getElementById('idPreco').value = total;
-		}
-	</script>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/imagen/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/home.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/form.css">
 </head>
 <body>
 	<div id="interface">
 		<nav id=menu>
 			<h2>Menu Principal</h2>
-			<ul>
-				<li> <a href="https://pt.wikipedia.org/wiki/Jogos_Ol%C3%ADmpicos_de_Ver%C3%A3o_de_2016"> NOTICIAS </a>
-				</li>
-				<li> <a href="calendario.html"> CALENDARIO </a> </li>
-				<li> <a href="modalidade.html"> MODALIDADE </a> </li>
-				<li> <a href="fale-conosco.html"> ingresso </a> </li>
-				<li> <a href="formulario.html"> Formulario </a> </li>
-				<li> <a href="about.html"> Sobre </a> </li>
-			</ul>
+            <ul>
+                <li> <a href="https://pt.wikipedia.org/wiki/Jogos_Ol%C3%ADmpicos_de_Ver%C3%A3o_de_2016">    NOTICIAS    </a></li>
+                <li> <a href="calendario.html">                                                             CALENDARIO  </a></li>
+                <li> <a href="modalidade.html">                                                             MODALIDADE  </a></li>
+                <li> <a href="fale-conosco.html">                                                           ingresso    </a></li>
+                <li> <a href="formulario.html">                                                             Formulario  </a></li>
+                <li> <a href="about.html">                                                                  Sobre       </a></li>
+            </ul>
 			<!--   imagem de cabeçalho       -->
-			<a href="../index.html"> <img id="capa" src="../_image/smallolimpiadas-rio-2016-logo.png"> <a />
-				<img id="cabecalho" src="../_image/capa0.png">
+			<a href="../index.html"> <img id="capa" src="../assets/image/smallolimpiadas-rio-2016-logo.png"> <a />
+				<img id="cabecalho" src="../assets/image/capa0.png">
 		</nav>
-
 		<form method="post" id="Fcontato" action="mailto:contato@glass.com" oninput="calc_total()">
 			<fieldset id="identidade">
 				<legend>Identificação do Usuário</legend>
@@ -40,23 +31,20 @@
 					<label for="idNome">Nome : </label>
 					<input type="text" name="Tnome" id="idNome" size="20" maxlength="30" placeholder=" Nome completo" />
 				</p>
-
 				<p>
 					<label for="idSenha">Senha:</label>
-					<input type="password" name="Tsenha" id="idSenha" size="16" maxlength="16"
-						placeholder=" Até 16 Dígitos">
+					<input type="password" name="Tsenha" id="idSenha" size="16" maxlength="16" placeholder=" Até 16 Dígitos">
 				</p>
-
 				<p>
 					<label for="idEmail">E-mail:</label>
-					<input type="email" name="Temail" id="idEmail" size="20" maxlength="40"
-						placeholder=" Digite seu e-mail">
+					<input type="email" name="Temail" id="idEmail" size="20" maxlength="40" placeholder=" Digite seu e-mail">
 				</p>
-
 				<fieldset id="sexo">
 					<legend>Sexo</legend>
+					
 					<input type="radio" name="Tsexo" id="idMasculino" checked>
 					<label for="idMasculino">Masculino</label>
+					
 					<input type="radio" name="Tsexo" id="idFeminino">
 					<label for="idFeminino">Feminino</label>
 				</fieldset>
@@ -65,17 +53,15 @@
 					<input type="date" name="Tnascimento" id="idNascimento">
 				</p>
 			</fieldset>
-
 			<fieldset id="endereco">
 				<legend>Endereço do Usuário</legend>
 				<p>
 					<label for="idLogradouro"> Logradouro:</label>
-					<input type="text" name="Tlogradouro" id="idLogradouro" size="20" maxlength="30"
-						placeholder="Rua, Avenida, Estrada">
+					<input type="text" name="Tlogradouro" id="idLogradouro" size="20" maxlength="30" placeholder="Rua, Avenida, Estrada">
 				</p>
 				<p>
 					<label for="idNumero"> Número:</label>
-					<input type="number" name="Tnumero" id="idNumero" min="0" max "99999">
+					<input type="number" name="Tnumero" id="idNumero" min="0" max "99">
 				</p>
 				<p>
 					<label for="idEstado"> Estado:</label>
@@ -111,8 +97,7 @@
 				</p>
 				<p>
 					<label for="idCidade">Cidade:</label>
-					<input type="text" maxlength="40" size="20" placeholder=" Sua Cidade" name="Tcidade" id="idCidade"
-						list="cidade">
+					<input type="text" maxlength="40" size="20" placeholder=" Sua Cidade" name="Tcidade" id="idCidade" list="cidade">
 					<datalist id=cidade>
 						<option value="Rio de Janeiro"></option>
 						<option value="São Paulo"></option>
@@ -121,10 +106,9 @@
 						<option value="Campos dos Goytacazes"></option>
 						<option value="Santo Antônio de Pádua"></option>
 						<option value="Aperibé"></option>
-						<datalist>
+					</datalist>
 				</p>
 			</fieldset>
-
 			<fieldset id="mensagem">
 				<legend>Mensagem do Usuário</legend>
 				<p>
@@ -133,16 +117,14 @@
 				</p>
 				<p>
 					<label for="idMensagem">Mensagem:</label>
-					<textarea name="Tmensagem" id="idMensagem" cols="45" rows="5"
-						placeholder="  Digite aqui sua mensagem. "></textarea>
+					<textarea name="Tmensagem" id="idMensagem" cols="45" rows="5" placeholder="  Digite aqui sua mensagem. "></textarea>
 				</p>
 			</fieldset>
-
 			<fieldset id="pedido">
-				<legend>Quero um Google Glass</legend>
+				<legend>Ingresso</legend>
 				<p>
 					<input type="checkbox" name="Tpedido" id="idPedido" checked>
-					<label for="idPedido">Gostaria de adquirir um ingresso quando disponível?</label>
+					<label for="idPedido">Gostaria de adquirir quando disponível?</label>
 				</p>
 				<p>
 					<br>
@@ -155,9 +137,8 @@
 					<input type="text" name="Tpreco" id="idPreco" placeholder=" Total à paga" readonly>
 				</p>
 			</fieldset>
-			<input type="image" src="../_image/botao-enviar.png" value="Enviar">
+			<input type="image" src="../assets/image/botao-enviar.png" value="Enviar">
 		</form>
-
 		<footer id="rodape">
 			<article id="criador">
 				<h5>Copyright 2015©</h5>
@@ -166,4 +147,11 @@
 		</footer>
 	</div>
 </body>
+<script>
+	function calc_total() {
+		var qtd = parseInt(document.getElementById('idQuantidade').value);
+		total = qtd * 250;
+		document.getElementById('idPreco').value = total;
+	}
+</script>
 </html>
